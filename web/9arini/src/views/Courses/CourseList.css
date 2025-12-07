@@ -1,0 +1,92 @@
+/* =========================================
+   CourseList.css - SCOPED & FORCED LEFT
+   ========================================= */
+
+/* 1. Page Wrapper - Force Left Alignment */
+.courses-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  text-align: left !important; /* Override any global center */
+}
+
+/* 2. Main Container */
+.courses-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container itself */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: block !important; /* Stop Flex centering */
+}
+
+/* 3. Page Header (Title & Subtitle) */
+.courses-header {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+  text-align: left !important;
+}
+
+.courses-header h1 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 10px;
+  text-align: left !important;
+}
+
+.courses-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  text-align: left !important;
+}
+
+/* 4. Section Headers (e.g. "Cours payants") */
+.courses-section {
+  margin-bottom: 60px;
+  text-align: left !important;
+}
+
+.courses-section-header {
+  margin-bottom: 30px;
+  text-align: left !important;
+}
+
+.courses-section-header h2 {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+  text-align: left !important;
+}
+
+.courses-section-header p {
+  color: #6b7280;
+  text-align: left !important;
+}
+
+/* 5. GRID SYSTEM (Left-to-Right) */
+.courses-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: start !important; /* Force grid items to start from left */
+  text-align: left !important;
+}
+
+/* 6. Card Styling - Scope to avoid Admin conflicts */
+.courses-page .course-card {
+  text-align: left !important;
+}
+
+/* 7. Responsive Fixes */
+@media (max-width: 768px) {
+  .courses-header h1 {
+    font-size: 2rem;
+  }
+  
+  .courses-grid {
+    justify-content: center !important; /* On mobile, centering is okay if you want */
+  }
+}

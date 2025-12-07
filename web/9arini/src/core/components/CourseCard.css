@@ -1,0 +1,161 @@
+.course-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(35, 55, 120, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.course-image-wrapper {
+  position: relative;
+}
+
+.course-image {
+  width: 100%;
+  display: block;
+  height: 190px;
+  object-fit: cover;
+}
+
+.course-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.badge-orange {
+  background: #ff7d4a;
+}
+
+.badge-green {
+  background: #22c55e;
+}
+
+.course-body {
+  padding: 18px 18px 16px;
+}
+
+.course-teacher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.course-teacher-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.course-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.course-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.92rem;
+}
+
+.course-rating span:first-child {
+  color: #fbbf24;
+  margin-right: 4px;
+}
+
+.muted {
+  color: #9ca3af;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.course-price {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.price-free {
+  color: #16a34a;
+}
+
+.course-old-price {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.course-level {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eff3ff;
+  color: #4b6bff;
+}
+
+/* Add these styles */
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.course-action-btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.course-action-btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.btn-accent {
+  background-color: #f97316;
+  color: white;
+}

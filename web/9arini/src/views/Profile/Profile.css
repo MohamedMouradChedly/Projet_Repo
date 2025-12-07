@@ -1,0 +1,173 @@
+/* PAGE LAYOUT */
+
+.profile-page {
+  min-height: 100vh;
+  background: #f5f6fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-main {
+  max-width: 1200px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER (AVATAR + TITLE) */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.profile-avatar-big {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* CARD */
+
+.profile-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 20px 24px;
+  box-shadow: 0 10px 30px rgba(35, 55, 120, 0.08);
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* MAIN USER INFO */
+
+.profile-main-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 14px;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #e5edff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.profile-email {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.profile-meta {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* FORMS */
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.profile-form-secondary {
+  margin-top: 18px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+}
+
+.profile-form label {
+  font-size: 0.9rem;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form input {
+  margin-top: 5px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 0.92rem;
+}
+
+/* BUTTONS */
+
+.profile-btn {
+  margin-top: 4px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.profile-btn.primary {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* MESSAGES */
+
+.profile-message {
+  margin-bottom: 8px;
+  color: #16a34a;
+  font-size: 0.9rem;
+}
+
+.profile-error {
+  margin-bottom: 8px;
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .profile-main {
+    margin-top: 24px;
+  }
+
+  .profile-card {
+    padding-inline: 16px;
+  }
+}

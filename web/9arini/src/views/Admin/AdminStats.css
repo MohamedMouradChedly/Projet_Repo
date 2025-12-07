@@ -1,0 +1,103 @@
+/* AdminStats.css */
+
+.stats-page {
+  min-height: 100vh;
+  background: #f5f6fb;
+  display: flex;
+  flex-direction: column;
+  text-align: left !important;
+}
+
+.stats-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: block !important;
+}
+
+.stats-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.stats-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* GRID */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* CARD STYLING */
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+  border: 1px solid transparent;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.stat-info h3 {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0;
+}
+
+.stat-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* COLOR THEMES */
+.blue-card .stat-icon { background: #eff6ff; color: #2563eb; }
+.blue-card { border-bottom: 4px solid #2563eb; }
+
+.purple-card .stat-icon { background: #f3e8ff; color: #9333ea; }
+.purple-card { border-bottom: 4px solid #9333ea; }
+
+.green-card .stat-icon { background: #dcfce7; color: #16a34a; }
+.green-card { border-bottom: 4px solid #16a34a; }
+
+.orange-card .stat-icon { background: #ffedd5; color: #ea580c; }
+.orange-card { border-bottom: 4px solid #ea580c; }
