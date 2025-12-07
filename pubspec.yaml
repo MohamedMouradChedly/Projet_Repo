@@ -1,0 +1,72 @@
+name: demo
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # 🔥 Firebase (Compatible versions)
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.17.9
+  cloud_firestore: ^4.15.9
+  firebase_storage: ^11.6.7
+
+  # Other packages
+  google_sign_in: ^6.1.5
+  provider: ^6.1.5+1
+  animated_text_kit: ^4.2.2
+  flutter_stripe: ^12.1.1
+  image_picker: ^1.0.7
+  fl_chart: ^1.1.1
+  file_picker: ^8.0.0
+  path_provider: ^2.1.2
+  video_player: ^2.8.2
+  pdf: ^3.11.0
+  http: ^1.2.0
+  url_launcher: ^6.3.0
+  flutter_pdfview: ^1.4.3
+  pdfx: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/logo/9a9a.png
+    - assets/logo/parinaa.jpg
+    - assets/puce/puceee.png
+    - assets/imageP/profil4.jpg
+    - assets/imageP/profil3.jpg
+    - assets/imageP/profil2.jpg
+    - assets/imageP/profil1.jpg
+    - assets/imageP/default.jpg
+    - assets/imageP/profil5.jpg
+    - assets/imageP/profil6.jpg
+    - assets/imageP/profil7.jpg
+    - assets/imageP/profil8.jpg
+    - assets/imageP/profil9.jpg
+    - assets/imageP/profil10.jpg
+    - assets/imageP/profil11.jpg
+    - assets/imageP/profil12.jpg
+    - assets/imageP/profil13.jpg
+    - assets/imageP/profil14.jpg
+    - assets/imageP/profil15.jpg
+    - assets/imageP/profil16.jpg
+    - assets/imageP/profil17.jpg
+    - assets/imageP/profil18.jpg
+    - assets/imageP/profil19.jpg
+    - assets/imageP/profil20.jpg
+    - assets/imageP/robocops.jpg
+    - assets/videos/1206.mp4
